@@ -1,0 +1,46 @@
+﻿<Window x:Class="WpfApp1.Calculator"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Калькулятор" Height="500" Width="800">
+    <Grid x:Name="LayoutRoot" Background="White">
+
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="75*" />
+            <ColumnDefinition Width="25*"/>
+            <ColumnDefinition Width="61*" />
+            <ColumnDefinition Width="39*"/>
+            <ColumnDefinition Width="100*" />
+            <ColumnDefinition Width="100*" />
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="textLabel" Grid.Column="0" Grid.ColumnSpan="6" Margin="0,0,0,97" Grid.RowSpan="2" FontFamily="Century Gothic" FontSize="24" FontWeight="Bold" Foreground="Black" Background="White" />
+        <Button Grid.Column="0" Grid.Row="1" Background="Blue" Grid.ColumnSpan="2" Margin="0,0,0,96" Grid.RowSpan="2" FontFamily="Century Gothic" TextBlock.FontFamily="Century Gothic" TextBlock.FontSize="24" TextBlock.FontWeight="Bold" TextBlock.Foreground="White">1</Button>
+        <Button Grid.Column="2" Grid.Row="1" Background="Blue" Foreground="White" Margin="0,0,0,96" Grid.RowSpan="2" Grid.ColumnSpan="2" TextBlock.FontFamily="Century Gothic" TextBlock.FontSize="24" TextBlock.FontWeight="Bold" TextBlock.Foreground="White">2</Button>
+        <Button Grid.Column="4" Grid.Row="1" Background="Blue" Margin="0,0,0,96" Grid.RowSpan="2" TextBlock.FontFamily="Century Gothic" TextBlock.FontSize="24" TextBlock.FontWeight="Bold" TextBlock.Foreground="White">3</Button>
+        <Button Grid.Column="5" Grid.Row="1" Margin="0,0,0,96" Grid.RowSpan="2" TextBlock.FontFamily="Century Gothic" TextBlock.FontSize="24" TextBlock.FontWeight="Bold" TextBlock.Foreground="White" Background="Blue">4</Button>
+        <Button Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" TextBlock.FontFamily="Century Gothic" TextBlock.FontSize="24" TextBlock.FontWeight="Bold" TextBlock.Foreground="White" Background="Blue">5</Button>
+        <Button Grid.Column="2" Grid.Row="2" Grid.ColumnSpan="2" TextBlock.FontFamily="Century Gothic" TextBlock.FontSize="24" TextBlock.FontWeight="Bold" TextBlock.Foreground="White" Background="Blue">6</Button>
+        <Button Grid.Column="4" Grid.Row="2" TextBlock.FontFamily="Century Gothic" TextBlock.FontSize="24" TextBlock.FontWeight="Bold" TextBlock.Foreground="White" Background="Blue">7</Button>
+        <Button Grid.Column="5" Grid.Row="2" TextBlock.FontFamily="Century Gothic" TextBlock.FontSize="24" TextBlock.FontWeight="Bold" TextBlock.Foreground="White" Background="Blue">8</Button>
+        <Button Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" Margin="0,96,0,0" Grid.RowSpan="2" TextBlock.FontFamily="Century Gothic" TextBlock.FontSize="24" TextBlock.FontWeight="Bold" TextBlock.Foreground="White" Background="Blue">9</Button>
+        <Button Grid.Column="2" Grid.Row="2" Margin="0,96,0,0" Grid.RowSpan="2" Grid.ColumnSpan="2" TextBlock.FontFamily="Century Gothic" TextBlock.FontSize="24" TextBlock.FontWeight="Bold" TextBlock.Foreground="White" Background="Blue">0</Button>
+        <Button Grid.Column="4" Grid.Row="2" Margin="0,96,0,0" Grid.RowSpan="2" TextBlock.FontFamily="Century Gothic" TextBlock.FontSize="24" TextBlock.FontWeight="Bold" TextBlock.Foreground="White" Background="Blue">+</Button>
+        <Button Grid.Column="5" Grid.Row="2" Margin="0,96,0,0" Grid.RowSpan="2" TextBlock.FontFamily="Century Gothic" TextBlock.FontSize="24" TextBlock.FontWeight="Bold" TextBlock.Foreground="White" Background="Blue">-</Button>
+        <Button Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2" Margin="0,97,0,0" Grid.RowSpan="2" TextBlock.FontFamily="Century Gothic" TextBlock.FontSize="24" TextBlock.FontWeight="Bold" TextBlock.Foreground="White" Background="Blue">*</Button>
+        <Button Grid.Column="2" Grid.Row="3" Margin="0,97,0,0" Grid.RowSpan="2" Grid.ColumnSpan="2" TextBlock.FontFamily="Century Gothic" TextBlock.FontSize="24" TextBlock.FontWeight="Bold" TextBlock.Foreground="White" Background="Blue">/</Button>
+        <Button Grid.Column="4" Grid.Row="3" Margin="0,97,0,0" Grid.RowSpan="2" TextBlock.FontFamily="Century Gothic" TextBlock.FontSize="24" TextBlock.FontWeight="Bold" TextBlock.Foreground="White" Background="Blue">=</Button>
+        <Button Grid.Column="5" Grid.Row="3" Margin="0,97,0,0" Grid.RowSpan="2" TextBlock.FontFamily="Century Gothic" TextBlock.FontSize="24" TextBlock.FontWeight="Bold" TextBlock.Foreground="White" Background="Blue">CLEAR</Button>
+
+    </Grid>
+
+</Window>
